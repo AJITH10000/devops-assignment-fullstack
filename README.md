@@ -6,37 +6,30 @@ This project demonstrates a two-tier fullstack application deployed on AWS using
 
 ##  Project Structure 
 
-.
-├── backend/                  # Flask backend
-│   ├── app.py               # Main Flask app
-│   ├── requirements.txt     # Python dependencies
-│   ├── Dockerfile           # Backend Docker build
-│   └── tests/
-│       └── test_app.py      # Unit test for backend
-│
-├── frontend/                # Next.js frontend
-│   ├── pages/
-│   │   └── index.js         # Frontend page calling backend
-│   ├── tests/
-│   │   └── e2e.test.js      # End-to-end test for frontend
-│   ├── package.json         # Node.js dependencies
-│   └── Dockerfile           # Frontend Docker build
-│
-├── infra/                   # Terraform infrastructure
-│   ├── main.tf              # Terraform entrypoint
-│   ├── variables.tf         # Input variables
-│   ├── vpc.tf               # VPC, subnets setup
-│   ├── ecs.tf               # ECS services & cluster
-│   ├── alb.tf               # Application Load Balancer
-│   ├── iam.tf               # IAM roles for ECS tasks
-│   └── outputs.tf           # Outputs after apply
-│
-├── .github/
-│   └── workflows/
-│       └── dev.yml          # CI/CD pipeline (GitHub Actions)
-│
-├── README.md                # Project overview and setup
-└── .gitignore               # Files to ignore in Git
+# backend/
+- app.py – Flask application
+- requirements.txt – Python dependencies
+- Dockerfile – Containerization setup for backend
+- tests/test_app.py – Unit tests for backend
+# frontend/
+- pages/index.js – Main page calling backend
+- package.json – Frontend dependencies
+- Dockerfile – Containerization setup for frontend
+- tests/e2e.test.js – End-to-end test for frontend
+# infra/
+- main.tf – Terraform entrypoint
+- vpc.tf – VPC, Subnets, Routing
+- alb.tf – Application Load Balancer
+- ecs.tf – ECS Cluster and Services
+- iam.tf – IAM roles and permissions
+- variables.tf – Input variables
+- outputs.tf – Outputs after apply
+# .github/workflows/
+- dev.yml – GitHub Actions CI/CD pipeline
+
+# README.md – Project overview and usage
+
+# .gitignore – Ignored files
 
 
 ---

@@ -6,38 +6,38 @@ This project demonstrates a two-tier fullstack application deployed on AWS using
 
 ##  Project Structure 
 
-devops-fullstack-app/
-│
-├── backend/                  # Python Flask/FastAPI backend
-│   ├── app.py
-│   ├── requirements.txt
-│   ├── Dockerfile
+.
+├── backend/                  # Flask backend
+│   ├── app.py               # Main Flask app
+│   ├── requirements.txt     # Python dependencies
+│   ├── Dockerfile           # Backend Docker build
 │   └── tests/
-│       └── test_app.py
+│       └── test_app.py      # Unit test for backend
 │
-├── frontend/                 # Next.js frontend
+├── frontend/                # Next.js frontend
 │   ├── pages/
-│   │   └── index.js
-│   ├── package.json
-│   ├── Dockerfile
-│   └── tests/
-│       └── e2e.test.js
+│   │   └── index.js         # Frontend page calling backend
+│   ├── tests/
+│   │   └── e2e.test.js      # End-to-end test for frontend
+│   ├── package.json         # Node.js dependencies
+│   └── Dockerfile           # Frontend Docker build
 │
-├── infra/                    # Terraform infrastructure
-│   ├── main.tf
-│   ├── variables.tf
-│   ├── vpc.tf
-│   ├── ecs.tf
-│   ├── alb.tf
-│   ├── iam.tf
-│   └── outputs.tf
+├── infra/                   # Terraform infrastructure
+│   ├── main.tf              # Terraform entrypoint
+│   ├── variables.tf         # Input variables
+│   ├── vpc.tf               # VPC, subnets setup
+│   ├── ecs.tf               # ECS services & cluster
+│   ├── alb.tf               # Application Load Balancer
+│   ├── iam.tf               # IAM roles for ECS tasks
+│   └── outputs.tf           # Outputs after apply
 │
 ├── .github/
 │   └── workflows/
-│       └── dev.yml          # GitHub Actions CI/CD workflow
+│       └── dev.yml          # CI/CD pipeline (GitHub Actions)
 │
-├── README.md                 # Overview and instructions
-└── .gitignore
+├── README.md                # Project overview and setup
+└── .gitignore               # Files to ignore in Git
+
 
 ---
 ###  1. Clone the Repository

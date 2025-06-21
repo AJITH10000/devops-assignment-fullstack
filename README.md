@@ -5,6 +5,7 @@ This project demonstrates a two-tier fullstack application deployed on AWS using
 ---
 
 ##  Project Structure 
+
 devops-fullstack-app/
 │
 ├── backend/                  # Python Flask/FastAPI backend

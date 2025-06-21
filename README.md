@@ -42,6 +42,7 @@ devops-fullstack-app/
 ###  1. Clone the Repository
 
 git https://github.com/AJITH10000/devops-assignment-fullstack.git
+
 cd devops-assignment-fullstack
 
 ---
@@ -129,7 +130,7 @@ Backend: pytest unit tests under backend/tests/
 
 Frontend: Jest or Cypress end-to-end tests under frontend/tests/
 
-### Submission Checklist ✅
+### Submission Checklist 
 
 - README.md with setup & architecture overview
 
